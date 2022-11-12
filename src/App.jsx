@@ -32,7 +32,7 @@ function App() {
 const deselectUser = () => setUserSelected(null)
 
   return (
-    <div className="App">
+    <div className="App lg:flex lg:w-5/6">
       <UsersList usersList={usersList} deleteUser= {deleteUser} selectUser={selectUser}/>
       <UsersForm getUsers={getUsers} userSelected={userSelected} deselectUser= {deselectUser}/>
     </div>
